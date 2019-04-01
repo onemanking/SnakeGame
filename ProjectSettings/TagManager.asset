@@ -4,7 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Block
   - Food
   layers:
   - Default

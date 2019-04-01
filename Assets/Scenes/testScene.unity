@@ -144,12 +144,9 @@ MonoBehaviour:
   borderPrefab: {fileID: 0}
   snakePrefab: {fileID: 2212539221476675763, guid: f4320d2eedae6cd4ab5fb5b13de026ce,
     type: 3}
-  backgroundPrefab: {fileID: 0}
-  logoDtacPrefab: {fileID: 0}
   boundPrefab: {fileID: 0}
-  foodPrefab: {fileID: 0}
-  botNormalSnakePrefab: {fileID: 0}
-  botSpecialSnakePrefab: []
+  foodPrefab: {fileID: 3315818390770014270, guid: ae4839e05db269145bfd22c92298db78,
+    type: 3}
   row: 15
   colume: 15
   backgroundList:

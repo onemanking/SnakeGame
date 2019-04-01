@@ -30,8 +30,11 @@ public class PoolManager : MonoBehaviour
 
     private List<Food> foodList;
 
+    private GameObject foodParent;
     public void Init ()
     {
+        foodParent = new GameObject();
+        foodParent.name = "FoodParent";
         foodList = new List<Food> ();
         for (int i = 0; i < pooledAmount; i++)
         {
@@ -39,6 +42,7 @@ public class PoolManager : MonoBehaviour
             go.SetActive (false);
             Food food = go.GetComponent<Food> ();
             foodList.Add (food);
+            food.transform.SetParent (foodParent.transform);
         }
     }
 
@@ -55,12 +59,7 @@ public class PoolManager : MonoBehaviour
         GameObject go = Instantiate (foodPrefab);
         Food food = go.GetComponent<Food> ();
         foodList.Add (food);
+        food.transform.SetParent (foodParent.transform);
         return food;
-    }
-
-    // Update is called once per frame
-    void Update ()
-    {
-
     }
 }

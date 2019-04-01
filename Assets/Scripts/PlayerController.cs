@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private Direction direction;
+    private Direction direction = Direction.Right;
 
     private Snake controllSnake;
     public Snake ControllSnake { get => controllSnake; }
@@ -55,20 +55,20 @@ public class PlayerController : MonoBehaviour
         //     direction = Direction.Down;
         // }
 
-        if (Input.GetKey (KeyCode.D))
+        if (Input.GetKey (KeyCode.D) || Input.GetKey (KeyCode.RightArrow))
         {
             direction = Direction.Right;
         }
-        else if (Input.GetKey (KeyCode.A))
+        else if (Input.GetKey (KeyCode.A) || Input.GetKey (KeyCode.LeftArrow))
         {
             direction = Direction.Left;
         }
 
-        if (Input.GetKey (KeyCode.W))
+        if (Input.GetKey (KeyCode.W) || Input.GetKey (KeyCode.UpArrow))
         {
             direction = Direction.Up;
         }
-        else if (Input.GetKey (KeyCode.S))
+        else if (Input.GetKey (KeyCode.S) || Input.GetKey (KeyCode.DownArrow))
         {
             direction = Direction.Down;
         }
