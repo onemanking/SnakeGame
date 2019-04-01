@@ -11,11 +11,11 @@ public class GameManager : MonoBehaviour
         {
             if (_instance == null)
             {
-                _instance = FindObjectOfType(typeof(GameManager)) as GameManager;
+                _instance = FindObjectOfType (typeof (GameManager)) as GameManager;
                 if (_instance == null)
                 {
-                    GameObject go = new GameObject();
-                    _instance = go.AddComponent<GameManager>();
+                    GameObject go = new GameObject ();
+                    _instance = go.AddComponent<GameManager> ();
                     go.name = "GameManager";
                 }
             }
@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject borderPrefab;
 
-    [Header("PREFABS")]
+    [Header ("PREFABS")]
     [SerializeField]
     private Snake snakePrefab;
     [SerializeField]
@@ -46,29 +46,28 @@ public class GameManager : MonoBehaviour
     private GameObject leftBorder;
     private GameObject rightBorder;
 
-
     public int row;
     public int colume;
     public List<GameObject> backgroundList;
-    public List<GameObject> gameBlockList = new List<GameObject>();
+    public List<GameObject> gameBlockList = new List<GameObject> ();
     // Start is called before the first frame update
-    void Start()
+    void Start ()
     {
-        InitLevel();
-        PoolManager.Instance.Init();
-        SpawnPlayerSnake();
+        InitLevel ();
+        PoolManager.Instance.Init ();
+        SpawnPlayerSnake ();
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown (KeyCode.Space))
         {
-            SpawnFood();
+            SpawnFood ();
         }
     }
 
-    public void InitLevel()
+    public void InitLevel ()
     {
         GameObject go = null;
         for (int x = 0; x < row; x++)
@@ -79,47 +78,47 @@ public class GameManager : MonoBehaviour
                 {
                     if (x % 2 == 0)
                     {
-                        go = Instantiate(backgroundList[0], new Vector2(1 * x, 1 * y), Quaternion.identity);
+                        go = Instantiate (backgroundList[0], new Vector2 (1 * x, 1 * y), Quaternion.identity);
                     }
                     else
                     {
-                        go = Instantiate(backgroundList[1], new Vector2(1 * x, 1 * y), Quaternion.identity);
+                        go = Instantiate (backgroundList[1], new Vector2 (1 * x, 1 * y), Quaternion.identity);
                     }
                 }
                 else
                 {
                     if (x % 2 == 0)
                     {
-                        go = Instantiate(backgroundList[1], new Vector2(1 * x, 1 * y), Quaternion.identity);
+                        go = Instantiate (backgroundList[1], new Vector2 (1 * x, 1 * y), Quaternion.identity);
                     }
                     else
                     {
-                        go = Instantiate(backgroundList[0], new Vector2(1 * x, 1 * y), Quaternion.identity);
+                        go = Instantiate (backgroundList[0], new Vector2 (1 * x, 1 * y), Quaternion.identity);
                     }
                 }
 
-                gameBlockList.Add(go);
+                gameBlockList.Add (go);
             }
         }
         // Instantiate(backgroundPrefab, Vector2.zero, Quaternion.identity);
         // topBorder = Instantiate(borderPrefab, Vector3.zero, Quaternion.identity);
     }
 
-    public void SpawnPlayerSnake()
+    public void SpawnPlayerSnake ()
     {
-        Snake playerSnake = Instantiate(snakePrefab, Vector3.zero, Quaternion.identity);
-        PlayerController.Instance.SetControllSnake(playerSnake);
+        Snake playerSnake = Instantiate (snakePrefab, Vector3.zero, Quaternion.identity);
+        PlayerController.Instance.SetControllSnake (playerSnake);
     }
 
-    public void SpawnFood()
+    public void SpawnFood ()
     {
-        Vector2 randomPosition = gameBlockList[Random.Range(0, gameBlockList.Count)].transform.position;
-        Food food = PoolManager.Instance.GetFoodObject();
+        Vector2 randomPosition = gameBlockList[Random.Range (0, gameBlockList.Count)].transform.position;
+        Food food = PoolManager.Instance.GetFoodObject ();
         food.transform.position = randomPosition;
-        food.gameObject.SetActive(true);
+        food.gameObject.SetActive (true);
     }
 
-    public void AddScore(int score)
+    public void AddScore (int score)
     {
 
     }

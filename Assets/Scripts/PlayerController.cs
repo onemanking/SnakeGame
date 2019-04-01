@@ -11,11 +11,11 @@ public class PlayerController : MonoBehaviour
         {
             if (_instance == null)
             {
-                _instance = FindObjectOfType(typeof(PlayerController)) as PlayerController;
+                _instance = FindObjectOfType (typeof (PlayerController)) as PlayerController;
                 if (_instance == null)
                 {
-                    GameObject go = new GameObject();
-                    _instance = go.AddComponent<PlayerController>();
+                    GameObject go = new GameObject ();
+                    _instance = go.AddComponent<PlayerController> ();
                     go.name = "PlayerController";
                 }
             }
@@ -29,13 +29,13 @@ public class PlayerController : MonoBehaviour
     public Snake ControllSnake { get => controllSnake; }
 
     // Start is called before the first frame update
-    void Start()
+    void Start ()
     {
 
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
         // if (Input.GetAxis("Horizontal") > 0)
         // {
@@ -55,31 +55,31 @@ public class PlayerController : MonoBehaviour
         //     direction = Direction.Down;
         // }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey (KeyCode.D))
         {
             direction = Direction.Right;
         }
-        else if (Input.GetKey(KeyCode.A))
+        else if (Input.GetKey (KeyCode.A))
         {
             direction = Direction.Left;
         }
 
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey (KeyCode.W))
         {
             direction = Direction.Up;
         }
-        else if (Input.GetKey(KeyCode.S))
+        else if (Input.GetKey (KeyCode.S))
         {
             direction = Direction.Down;
         }
 
         if (controllSnake)
         {
-            controllSnake.SetDirection(direction);
+            controllSnake.SetDirection (direction);
         }
     }
 
-    public void SetControllSnake(Snake snake)
+    public void SetControllSnake (Snake snake)
     {
         controllSnake = snake;
     }

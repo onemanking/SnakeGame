@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public enum Direction
 {
     Up,
@@ -14,13 +13,15 @@ public enum Direction
 public class Snake : MonoBehaviour
 {
     private const int Y = 0;
-    [Header("MOVEMENT")]
+    [Header ("MOVEMENT")]
     [SerializeField]
     private float speed = 10;
-    [Header("BODYPARTS")]
+    [SerializeField]
+    private float moveDelay = 0.1f;
+    [Header ("BODYPARTS")]
     public List<Transform> bodyPartsList;
 
-    [Header("HEAD")]
+    [Header ("HEAD")]
     public SpriteRenderer headSprite;
 
     [SerializeField]
@@ -28,27 +29,32 @@ public class Snake : MonoBehaviour
 
     private Direction direction;
 
+    private float currentMoveDelay;
     // Start is called before the first frame update
-    void Start()
+    void Start ()
     {
         direction = Direction.Right;
+        currentMoveDelay = moveDelay;
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
-        MoveForward();
+        currentMoveDelay -= Time.deltaTime;
+        if (currentMoveDelay <= 0)
+            MoveForward ();
     }
 
-    void MoveForward()
+    void MoveForward ()
     {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        currentMoveDelay = moveDelay;
+        transform.Translate (Vector2.right * speed * Time.deltaTime);
     }
 
-    public void SetDirection(Direction dir)
+    public void SetDirection (Direction dir)
     {
-        if ((direction == Direction.Right && dir == Direction.Left || direction == Direction.Left && dir == Direction.Right)
-            || (direction == Direction.Up && dir == Direction.Down || direction == Direction.Down && dir == Direction.Up))
+        if ((direction == Direction.Right && dir == Direction.Left || direction == Direction.Left && dir == Direction.Right) ||
+            (direction == Direction.Up && dir == Direction.Down || direction == Direction.Down && dir == Direction.Up))
             return;
 
         direction = dir;
@@ -56,49 +62,37 @@ public class Snake : MonoBehaviour
         switch (dir)
         {
             case Direction.Up:
-                transform.localRotation = Quaternion.Euler(0, 0, 90);
+                transform.localRotation = Quaternion.Euler (0, 0, 90);
                 break;
             case Direction.Down:
-                transform.localRotation = Quaternion.Euler(0, 0, -90);
+                transform.localRotation = Quaternion.Euler (0, 0, -90);
                 break;
             case Direction.Left:
-                transform.localRotation = Quaternion.Euler(0, 0, 180);
+                transform.localRotation = Quaternion.Euler (0, 0, 180);
                 break;
             case Direction.Right:
-                transform.localRotation = Quaternion.Euler(0, 0, 0);
+                transform.localRotation = Quaternion.Euler (0, 0, 0);
                 break;
         }
     }
 
-    void GrowthUp()
+    void GrowthUp ()
     {
-        GameObject bodyPart = GameObject.Instantiate(bodyPrefab) as GameObject;
+        GameObject bodyPart = GameObject.Instantiate (bodyPrefab) as GameObject;
         bodyPart.transform.position = bodyPartsList[bodyPartsList.Count - 1].position;
-        bodyPart.transform.SetParent(transform.parent);
-        bodyPartsList.Add(bodyPart.transform);
+        bodyPart.transform.SetParent (transform.parent);
+        bodyPartsList.Add (bodyPart.transform);
     }
 
-    void OnTriggerEnter2D(Collider2D coll)
+    void OnTriggerEnter2D (Collider2D coll)
     {
         if (coll.gameObject.tag == "Food")
         {
-            int foodScore = coll.gameObject.GetComponent<Food>().Score;
-            GameManager.Instance.AddScore(foodScore);
-            GrowthUp();
-            coll.gameObject.SetActive(false);
+            int foodScore = coll.gameObject.GetComponent<Food> ().Score;
+            GameManager.Instance.AddScore (foodScore);
+            // GrowthUp ();
+            coll.gameObject.SetActive (false);
         }
-
-        if (coll.gameObject.tag == "Block")
-        {
-            // transform.position = coll.gameObject.transform.position;
-           
-            // gameObject.GetComponent<Rigidbody2D>().MovePosition(coll.gameObject.transform.position);
-            // transform.position = Vector3.MoveTowards(transform.position, coll.gameObject.transform.position, 0.2f);
-        }
-    }
-
-    void FindBlock()
-    {
 
     }
 }

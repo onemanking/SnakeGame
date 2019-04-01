@@ -11,11 +11,11 @@ public class PoolManager : MonoBehaviour
         {
             if (_instance == null)
             {
-                _instance = FindObjectOfType(typeof(PoolManager)) as PoolManager;
+                _instance = FindObjectOfType (typeof (PoolManager)) as PoolManager;
                 if (_instance == null)
                 {
-                    GameObject go = new GameObject();
-                    _instance = go.AddComponent<PoolManager>();
+                    GameObject go = new GameObject ();
+                    _instance = go.AddComponent<PoolManager> ();
                     go.name = "PoolManager";
                 }
             }
@@ -30,19 +30,19 @@ public class PoolManager : MonoBehaviour
 
     private List<Food> foodList;
 
-    public void Init()
+    public void Init ()
     {
-        foodList = new List<Food>();
+        foodList = new List<Food> ();
         for (int i = 0; i < pooledAmount; i++)
         {
-            GameObject go = Instantiate(foodPrefab);
-            go.SetActive(false);
-            Food food = go.GetComponent<Food>();
-            foodList.Add(food);
+            GameObject go = Instantiate (foodPrefab);
+            go.SetActive (false);
+            Food food = go.GetComponent<Food> ();
+            foodList.Add (food);
         }
     }
 
-    public Food GetFoodObject()
+    public Food GetFoodObject ()
     {
         for (int i = 0; i < foodList.Count; i++)
         {
@@ -52,14 +52,14 @@ public class PoolManager : MonoBehaviour
             }
         }
 
-        GameObject go = Instantiate(foodPrefab);
-        Food food = go.GetComponent<Food>();
-        foodList.Add(food);
+        GameObject go = Instantiate (foodPrefab);
+        Food food = go.GetComponent<Food> ();
+        foodList.Add (food);
         return food;
     }
 
     // Update is called once per frame
-    void Update()
+    void Update ()
     {
 
     }

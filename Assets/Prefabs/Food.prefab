@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1790753323481941874}
   m_Layer: 0
   m_Name: Food
-  m_TagString: Untagged
+  m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,6 +94,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 1
+  startSize: {x: 0, y: 0, z: 0}
+  endSize: 1.2
 --- !u!58 &1790753323481941874
 CircleCollider2D:
   m_ObjectHideFlags: 0

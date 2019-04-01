@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 2212539221476675762}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -46,7 +46,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 657483ca8b3794b40bfc4527af66ec08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 5
+  moveDelay: 0
   bodyPartsList: []
   headSprite: {fileID: 0}
   bodyPrefab: {fileID: 2951373734949451563, guid: efd16fade9e864c47bbef8576fa79ba8,
