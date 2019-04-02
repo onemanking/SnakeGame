@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum CurrentState
+{
+    Standby,
+    Playing,
+    Gameover
+}
+
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance = null;
@@ -34,29 +41,57 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private Food foodPrefab;
 
-    private GameObject topBorder;
-    private GameObject bottomBorder;
-    private GameObject leftBorder;
-    private GameObject rightBorder;
-
     private GameObject blockParent;
+    private GameObject borderParent;
 
     public int row;
     public int colume;
     public List<GameObject> backgroundList;
     public List<GameObject> gameBlockList = new List<GameObject> ();
+
+    public CurrentState currentState;
+
+    private int score;
+
     // Start is called before the first frame update
     void Start ()
     {
         InitLevel ();
         PoolManager.Instance.Init ();
         SpawnPlayerSnake ();
-        int foodBlockNumber = 114;
-        SpawnFood (gameBlockList[foodBlockNumber]);
+        SpawnFood (gameBlockList[Defines.FOOD_BLOCK_NUMBER]);
+    }
+
+    public void StartGame ()
+    {
+        currentState = CurrentState.Playing;
+    }
+
+    public void Gameover ()
+    {
+        currentState = CurrentState.Gameover;
+        MenuManager.Instance.Gameover ();
+    }
+
+    public void Replay ()
+    {
+        InitNewGame ();
+        StartGame ();
+    }
+
+    void InitNewGame ()
+    {
+        score = 0;
+        MenuManager.Instance.ScoreTextChange (score);
+        SpawnPlayerSnake ();
+        ClearAllFood ();
+        SpawnFood (gameBlockList[Defines.FOOD_BLOCK_NUMBER]);
+		AudioManager.Instance.PlayBGM ("MainMenu");
     }
 
     public void InitLevel ()
     {
+        // SPAWN BACKGROUND
         blockParent = new GameObject ();
         blockParent.name = "BlockParent";
         GameObject go = null;
@@ -91,11 +126,24 @@ public class GameManager : MonoBehaviour
                 go.transform.SetParent (blockParent.transform);
             }
         }
-        // Instantiate(backgroundPrefab, Vector2.zero, Quaternion.identity);
-        // topBorder = Instantiate(borderPrefab, Vector3.zero, Quaternion.identity);
+
+        // SPAWN BORDER
+        borderParent = new GameObject ();
+        borderParent.name = "BorderParent";
+        for (int y = -1; y < colume + 1; y++)
+        {
+            for (int x = -1; x < row + 1; x++)
+            {
+                if (x == -1 || x == row + 1 || y == -1 || y == colume + 1 || x == row || y == row)
+                {
+                    go = Instantiate (borderPrefab, new Vector2 (1 * x, 1 * y), Quaternion.identity);
+                    go.transform.SetParent (borderParent.transform);
+                }
+            }
+        }
     }
 
-    public void SpawnPlayerSnake ()
+    private void SpawnPlayerSnake ()
     {
         Snake playerSnake = Instantiate (snakePrefab, new Vector2 (4, 7), Quaternion.identity);
         playerSnake.Init ();
@@ -112,14 +160,21 @@ public class GameManager : MonoBehaviour
 
     public void SpawnFood (GameObject gameBlock)
     {
-        Vector2 position = gameBlockList.Find(x => x == gameBlock).transform.position;
+        Vector2 position = gameBlockList.Find (x => x == gameBlock).transform.position;
         Food food = PoolManager.Instance.GetFoodObject ();
         food.transform.position = position;
         food.gameObject.SetActive (true);
     }
 
-    public void AddScore (int score)
+    public void ClearAllFood ()
     {
-        
+        PoolManager.Instance.DisableAllObject ();
+    }
+
+    public void AddScore (int _score)
+    {
+        score += _score;
+        MenuManager.Instance.ScoreTextChange (score);
+        AudioManager.Instance.PlaySoundEffect ("Reward");
     }
 }

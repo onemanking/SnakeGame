@@ -28,12 +28,6 @@ public class PlayerController : MonoBehaviour
     private Snake controllSnake;
     public Snake ControllSnake { get => controllSnake; }
 
-    // Start is called before the first frame update
-    void Start ()
-    {
-
-    }
-
     // Update is called once per frame
     void Update ()
     {
@@ -81,6 +75,7 @@ public class PlayerController : MonoBehaviour
 
     public void SetControllSnake (Snake snake)
     {
+        direction = Direction.Right;
         controllSnake = snake;
     }
 }

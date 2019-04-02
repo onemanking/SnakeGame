@@ -1,0 +1,1643 @@
+fileFormatVersion: 2
+guid: 09fe3f55e09890947a138b3e39e81800
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Window_0
+    21300002: Window_1
+    21300004: Window_2
+    21300006: Window_3
+    21300008: Window_4
+    21300010: Window_5
+    21300012: Window_6
+    21300014: Window_7
+    21300016: Window_8
+    21300018: Window_9
+    21300020: Window_10
+    21300022: Window_11
+    21300024: Window_12
+    21300026: Window_13
+    21300028: Window_14
+    21300030: Window_15
+    21300032: Window_16
+    21300034: Window_17
+    21300036: Window_18
+    21300038: Window_19
+    21300040: Window_20
+    21300042: Window_21
+    21300044: Window_22
+    21300046: Window_23
+    21300048: Window_24
+    21300050: Window_25
+    21300052: Window_26
+    21300054: Window_27
+    21300056: Window_28
+    21300058: Window_29
+    21300060: Window_30
+    21300062: Window_31
+    21300064: Window_32
+    21300066: Window_33
+    21300068: Window_34
+    21300070: Window_35
+    21300072: Window_36
+    21300074: Window_37
+    21300076: Window_38
+    21300078: Window_39
+    21300080: Window_40
+    21300082: Window_41
+    21300084: Window_42
+    21300086: Window_43
+    21300088: Window_44
+    21300090: Window_45
+    21300092: Window_46
+    21300094: Window_47
+    21300096: Window_48
+    21300098: Window_49
+    21300100: Window_50
+    21300102: Window_51
+    21300104: Window_52
+    21300106: Window_53
+    21300108: Window_54
+    21300110: Window_55
+    21300112: Window_56
+    21300114: Window_57
+    21300116: Window_58
+    21300118: Window_59
+    21300120: Window_60
+    21300122: Window_61
+    21300124: Window_62
+    21300126: Window_63
+    21300128: Window_64
+    21300130: Window_65
+    21300132: Window_66
+    21300134: Window_67
+    21300136: Window_68
+    21300138: Window_69
+    21300140: Window_70
+    21300142: Window_71
+    21300144: Window_72
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Window_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 4103
+        width: 930
+        height: 810
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1a4133544fb5ff4596540860a607f93
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_1
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 4874
+        width: 139
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744b96b94eefd7d408eb718dc6ce1532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_2
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 4874
+        width: 186
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860f115872717ad47a17c6ff5bab11c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_3
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 4776
+        width: 708
+        height: 191
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce7bc1bba4d28447b7c6f20c446c396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_4
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 4093
+        width: 932
+        height: 747
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4249e6f2faf324c9100b4b2a02a58f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_5
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 4093
+        width: 931
+        height: 662
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f3135fb1b40584dab0c2f77b05d1a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_6
+      rect:
+        serializedVersion: 2
+        x: 3020
+        y: 4093
+        width: 930
+        height: 662
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f9abb92c495f64c92aa813d6d64b55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_7
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 3900
+        width: 180
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c557792bf8eb8ee40b1c4ae2f06cca5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_8
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 3844
+        width: 456
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d663d2a698c564096da475f5a3263e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_9
+      rect:
+        serializedVersion: 2
+        x: 3059
+        y: 3578
+        width: 827
+        height: 474
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c100087e67b3c80498f2756552eb71fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_10
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3250
+        width: 455
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c0c065aa4e31e341bcdcf6e01d4b8c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_11
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 3250
+        width: 456
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f76e80269e3df45945d491db89140c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_12
+      rect:
+        serializedVersion: 2
+        x: 1198
+        y: 3250
+        width: 378
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b049b2edfdda8d4fa337264009f84fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_13
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 3250
+        width: 379
+        height: 567
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b685fea27110ff149a3b8be094276d95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_14
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 3322
+        width: 305
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31016a7689439f4397878c02cb33eeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_15
+      rect:
+        serializedVersion: 2
+        x: 2741
+        y: 2958
+        width: 691
+        height: 383
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bb654de85467d4aa52a2245fc657ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_16
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 3009
+        width: 291
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db772bcf6651cf4fbb4c61c8b82dd73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_17
+      rect:
+        serializedVersion: 2
+        x: 1892
+        y: 2946
+        width: 710
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c1cc4337b76e440a751447b955d340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_18
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 2313
+        width: 776
+        height: 664
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ca0e97f9ceb9c49825d0f435da42bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_19
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 2352
+        width: 776
+        height: 625
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b550a14672aa0f4418f05c2387b5d8f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_20
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 2352
+        width: 775
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e757a38c6392d3d438d7fad8d19f3916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_21
+      rect:
+        serializedVersion: 2
+        x: 2714
+        y: 2352
+        width: 774
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca0aec8fac1c9e418c5077a8ae5031b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_22
+      rect:
+        serializedVersion: 2
+        x: 1064
+        y: 2206
+        width: 214
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c251ecd9e86e84cadab2d5b1021b42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_23
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 2138
+        width: 613
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc057e300d26270478051988533d9b46
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_24
+      rect:
+        serializedVersion: 2
+        x: 3538
+        y: 2164
+        width: 433
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e04451bcebc0bd40a49b41a707c0a52
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_25
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1303
+        width: 630
+        height: 866
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28e38665f963e546b2547de8cb82b4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_26
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 1320
+        width: 613
+        height: 849
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80f9a74ce788c1840bc1cdd077eeadd3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_27
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1419
+        width: 19
+        height: 606
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a5185fb919fe914e954578efefed44e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_28
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 1320
+        width: 605
+        height: 775
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c05b1427bcd3d54f90619bec6550124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_29
+      rect:
+        serializedVersion: 2
+        x: 2321
+        y: 1320
+        width: 606
+        height: 775
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def6d6da6c7cd2c48a1c5ae8aca5a3a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_30
+      rect:
+        serializedVersion: 2
+        x: 2983
+        y: 1417
+        width: 486
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de17eed969430fe4792e7d4d18b46b2d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_31
+      rect:
+        serializedVersion: 2
+        x: 3538
+        y: 2016
+        width: 433
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f174c551daf52804fad54fc1d46e0e42
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_32
+      rect:
+        serializedVersion: 2
+        x: 3554
+        y: 1888
+        width: 105
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17382313a66edf34b963b81b8754850c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_33
+      rect:
+        serializedVersion: 2
+        x: 3662
+        y: 1888
+        width: 290
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709e2b9eb0548c044976f1f3bf51a097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_34
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 1703
+        width: 431
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38330c77789618249be2a792ec0301fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_35
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 1553
+        width: 431
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1693b75ee503430488f524bc37734efa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_36
+      rect:
+        serializedVersion: 2
+        x: 3545
+        y: 1434
+        width: 104
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e614fe33a58ca42a36ed1e9a1f8597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_37
+      rect:
+        serializedVersion: 2
+        x: 3652
+        y: 1434
+        width: 291
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad5049e1ea7c5b74490119d1debe4b5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_38
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1183
+        width: 273
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 762cbc15b67920040adcee351e52dd82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_39
+      rect:
+        serializedVersion: 2
+        x: 3615
+        y: 1281
+        width: 316
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6189106d4564924c85db25ec2defc4b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_40
+      rect:
+        serializedVersion: 2
+        x: 1550
+        y: 1005
+        width: 620
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b33ea5ae97a5642b0c1b7a5faacd2f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_41
+      rect:
+        serializedVersion: 2
+        x: 2311
+        y: 990
+        width: 166
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e3ebd07cc732c4aa6ff81d3d9cdaae
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_42
+      rect:
+        serializedVersion: 2
+        x: 2446
+        y: 1019
+        width: 217
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eedf92988f1d1614a862930259a925c6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_43
+      rect:
+        serializedVersion: 2
+        x: 2634
+        y: 990
+        width: 168
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c41b9fb47b012e468daeb21f3e42a63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_44
+      rect:
+        serializedVersion: 2
+        x: 3606
+        y: 1143
+        width: 325
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f766b34f3ea3bf04683468ecac5dc5b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_45
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 1053
+        width: 140
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20905c35fe0659b41ae519ded68d43a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_46
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 1053
+        width: 261
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e26ab07c038b7479384de1d57557eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_47
+      rect:
+        serializedVersion: 2
+        x: 3615
+        y: 993
+        width: 316
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5395096cb983df54e915c751dcf98cab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_48
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 197
+        width: 621
+        height: 837
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7afcc0892bb6ff4f84498c8447744d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_49
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 248
+        width: 620
+        height: 786
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f265bc0326d02c74faa942241b4ed3f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_50
+      rect:
+        serializedVersion: 2
+        x: 1557
+        y: 248
+        width: 607
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b20c59d22f85264d86dc1063089fa97
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_51
+      rect:
+        serializedVersion: 2
+        x: 2236
+        y: 248
+        width: 608
+        height: 693
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5482ae04cd78bf942923a29041a92751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_52
+      rect:
+        serializedVersion: 2
+        x: 2885
+        y: 780
+        width: 291
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57ff54cd5c089145a299e3aab7e5eec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_53
+      rect:
+        serializedVersion: 2
+        x: 3606
+        y: 855
+        width: 325
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d74bbb08f1af0459571a8b7b136b09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_54
+      rect:
+        serializedVersion: 2
+        x: 2868
+        y: 651
+        width: 308
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02277d6af9b220243afff6018bd2b36b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_55
+      rect:
+        serializedVersion: 2
+        x: 3632
+        y: 734
+        width: 299
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6db1abe9803b19e45a9ba8110e027fe7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_56
+      rect:
+        serializedVersion: 2
+        x: 3696
+        y: 647
+        width: 212
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e5bee0f7564364a9adbacf58d93fbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_57
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 475
+        width: 481
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1853359f82dd0c4cbd3fda7c6cc7f16
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_58
+      rect:
+        serializedVersion: 2
+        x: 3464
+        y: 470
+        width: 451
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 289e35e7372ad4c4e9d32d1461590a4d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_59
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 333
+        width: 474
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f4b05616303ee542a17bf73b78d2669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_60
+      rect:
+        serializedVersion: 2
+        x: 3464
+        y: 332
+        width: 451
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d82659130c2eb45825886a18445880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_61
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 178
+        width: 481
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7a7dc3713de5545a4a2e60c0326277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_62
+      rect:
+        serializedVersion: 2
+        x: 3530
+        y: 253
+        width: 364
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f759d89cc45e9459985dac412d5514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_63
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 38
+        width: 137
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d144d00d0ad194c965bce847dba795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_64
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 71
+        width: 176
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d721aab5146124e9ad6eeed1927c65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_65
+      rect:
+        serializedVersion: 2
+        x: 1226
+        y: 38
+        width: 135
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6edf48b2a556f144a8cd23946150d333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_66
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 55
+        width: 132
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01235355ba2dcc84b9fc4b0ff45baf05
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_67
+      rect:
+        serializedVersion: 2
+        x: 1679
+        y: 50
+        width: 115
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27731a0755128f4cbe04eab807625d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_68
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 58
+        width: 136
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79a9332083801e408b3c46282e3a4a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_69
+      rect:
+        serializedVersion: 2
+        x: 1984
+        y: 53
+        width: 98
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92a7357ffa00814ea852e0dd9655386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_70
+      rect:
+        serializedVersion: 2
+        x: 2956
+        y: 37
+        width: 474
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b1eef5c5a5aff43bfe838e7bdb8e39
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_71
+      rect:
+        serializedVersion: 2
+        x: 3493
+        y: 145
+        width: 347
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c7bdcbe07401445af4f0082a517bfc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Window_72
+      rect:
+        serializedVersion: 2
+        x: 3493
+        y: 74
+        width: 347
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71fce3642ea090846aae16ed628c2630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f0ebd9ff30465e448900c6eeac269cf0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

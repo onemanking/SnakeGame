@@ -50,6 +50,7 @@ MonoBehaviour:
   bodyPartsList: []
   bodyPrefab: {fileID: 2951373734949451563, guid: efd16fade9e864c47bbef8576fa79ba8,
     type: 3}
+  isDead: 0
 --- !u!212 &2212539221476675765
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -134,4 +135,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.25
+  m_Radius: 0.2

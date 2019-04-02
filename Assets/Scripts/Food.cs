@@ -31,6 +31,11 @@ public class Food : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
+        if (GetStopCondition ())
+        {
+            return;
+        }
+
         if (transform.localScale.x < Vector3.one.x && !init)
         {
             currentSize = Vector3.Slerp (currentSize, Vector3.one * endSize, Time.deltaTime * 5);
@@ -44,5 +49,10 @@ public class Food : MonoBehaviour
                 init = true;
             transform.localScale = Vector3.one * Mathf.Clamp (Mathf.PingPong (timeStart + Time.time, 1.5f), 0.8f, 1.5f);
         }
+    }
+
+    bool GetStopCondition ()
+    {
+        return (GameManager.Instance.currentState != CurrentState.Playing);
     }
 }

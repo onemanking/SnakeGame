@@ -31,6 +31,7 @@ public class PoolManager : MonoBehaviour
     private List<Food> foodList;
 
     private GameObject foodParent;
+
     public void Init ()
     {
         foodParent = new GameObject();
@@ -61,5 +62,17 @@ public class PoolManager : MonoBehaviour
         foodList.Add (food);
         food.transform.SetParent (foodParent.transform);
         return food;
+    }
+
+    public void DisableAllObject()
+    {
+        for (int i = 0; i < foodList.Count; i++)
+        {
+            if (foodList[i].gameObject.activeInHierarchy)
+            {
+                foodList[i].gameObject.SetActive(false);
+            }
+        }
+
     }
 }

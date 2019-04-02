@@ -26,6 +26,9 @@ public class Snake : MonoBehaviour
 
     private float currentMoveDelay;
 
+    [HideInInspector]
+    public bool isDead;
+
     // Start is called before the first frame update
     void Start ()
     {
@@ -35,6 +38,10 @@ public class Snake : MonoBehaviour
     // Update is called once per frame
     void Update ()
     {
+        if (GetStopCondition ())
+        {
+            return;
+        }
         currentMoveDelay += Time.deltaTime;
 
         if (currentMoveDelay >= moveDelay)
@@ -85,7 +92,7 @@ public class Snake : MonoBehaviour
     public void SetDirection (Direction dir)
     {
         if ((direction == Direction.Right && dir == Direction.Left || direction == Direction.Left && dir == Direction.Right) ||
-            (direction == Direction.Up && dir == Direction.Down || direction == Direction.Down && dir == Direction.Up))
+            (direction == Direction.Up && dir == Direction.Down || direction == Direction.Down && dir == Direction.Up) || GetStopCondition ())
         {
             return;
         }
@@ -110,7 +117,49 @@ public class Snake : MonoBehaviour
 
     void Death ()
     {
-        
+        isDead = true;
+        AudioManager.Instance.PlaySoundEffect ("Hit");
+        SlowlyDisapperAndDead ();
+    }
+
+    void SlowlyDisapperAndDead ()
+    {
+        StartCoroutine (SlowlyDisapperAndDead (0.0f, 0.1f));
+    }
+
+    IEnumerator SlowlyDisapperAndDead (float alpha, float duration)
+    {
+        foreach (Transform tr in bodyPartsList)
+        {
+            SpriteRenderer sr = tr.GetComponent<SpriteRenderer> ();
+            float delta = 0.0f;
+
+            Color originalColor = sr.color;
+
+            Color targetColor = new Color (originalColor.r, originalColor.g, originalColor.b, alpha);
+
+            while (delta < duration)
+            {
+                float amount = (delta) / duration;
+                sr.color = Color.Lerp (originalColor, targetColor, amount);
+                delta += Time.deltaTime;
+                yield return null;
+            }
+        }
+
+        yield return new WaitForEndOfFrame ();
+        foreach (Transform tr in bodyPartsList)
+        {
+            DestroyImmediate (tr.gameObject);
+        }
+
+        bodyPartsList.Clear ();
+
+        GameManager.Instance.Gameover ();
+
+        yield return new WaitForEndOfFrame ();
+
+        Destroy (gameObject);
     }
 
     void EatFood (Vector2 position)
@@ -130,9 +179,14 @@ public class Snake : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D coll)
     {
-        if (coll.gameObject.tag == "Snake")
+        if (isDead)
         {
-            Death();
+            return;
+        }
+
+        if (coll.gameObject.tag == "Snake" || coll.gameObject.tag == "Border")
+        {
+            Death ();
         }
         else if (coll.gameObject.tag == "Food")
         {
@@ -141,5 +195,10 @@ public class Snake : MonoBehaviour
             EatFood (coll.transform.position);
             coll.gameObject.SetActive (false);
         }
+    }
+
+    bool GetStopCondition ()
+    {
+        return (isDead || GameManager.Instance.currentState != CurrentState.Playing);
     }
 }
